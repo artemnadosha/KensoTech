@@ -1,0 +1,163 @@
+.section-wrapper {
+  position: relative;
+
+  & .more-cases-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: right;
+    gap: 34px;
+    bottom: 45px;
+
+    
+    @media (max-width: 1280px) {
+      bottom: 28px;
+    }
+    
+    @media (max-width: 991px) {
+      bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      position: static;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+
+}
+
+.our-cases-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+}
+
+.our-cases {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media (max-width: 1440px) {
+    gap: 80px;
+  }
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.case {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  gap: 130px;
+
+  
+  @media (max-width: 1440px) {
+    gap: 100px;
+    padding: 90px;
+  }
+  
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  @media (max-width: 700px) {
+    gap: 20px;
+    padding: 15px;
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+  
+}
+
+.case-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media (max-width: 1280px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+.case-img {
+  width: 626px;
+
+  @media (max-width: 1440px) {
+    width: 550px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 490px;
+  }
+
+  @media (max-width: 1100px) {
+    width: 375px;
+  }
+
+  @media (max-width: 991px) {
+    width: 300px;
+  }
+  
+  @media (max-width: 420px) {
+    width: 230px;
+  }
+}
+
+.case-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 1280px) {
+    font-size: 30px;
+  }
+}
+
+.case-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+  &.text-right {
+    text-align: right;
+  }
+}
+
+.our-cases-desktop {
+  display: none;
+
+  @media (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  @media (max-width: 991px) {
+    gap: 70px;
+  }
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+}
+
+
+
